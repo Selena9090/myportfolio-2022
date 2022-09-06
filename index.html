@@ -1,59 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>My Portfolio</title>
-    <meta name="description" content="A minimal, simple portfolio site." />
+
+    <!-- HTML5 -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
     <!-- VIEWPORT FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- FOR IE -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- MAIN CSS FILE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
 </head>
 
-<body class="page-work">
+<body>
 
     <header class="site-header">
-        <div class="site-identity">
-            <h1><a href="index.html">Selena</a></h1>
-        </div>
-        <nav class="site-navigation">
-            <ul>
-                <li><a href="index.html" class="selected">Work</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+            <div class="site-branding">
+                <h1>
+                    <a href="index.html">Selena Lytle-Brinck</a>
+                </h1>
+            </div>
+            <nav class="site-navigation">
+                <ul>
+                    <li class="selected">
+                        <a href="index.html#work" class="selected">Work</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
     </header>
 
-    <main class="site-main">
+    <main class="site-main fade-and-move-in">
+
         <section id="work" class="text-centered">
-            <ul class="thumbgrid">
-                <li><a href="bookcovers/index.html"><img src="img/bookcovers.JPEG" alt="Placeholder" /></a></li>
-                <li><a href="madrid/index.html"><img src="img/madrid.jpg" alt="Placeholder" /></a></li>
-                <li><a href="#"><img src="img/placeholder-1x1-ipad.jpg" alt="Placeholder" /></a></li>
-                <li><a href="#"><img src="img/placeholder-1x1-iphone.jpg" alt="Placeholder" /></a></li>
-            </ul>
+
+            <div class="thumbgrid">
+                <a href="bookcovers.index.html">
+                    <img src="img/bookcovers.JPEG" alt="placeholder" />
+                </a>
+                <a href="madrid.index.html">
+                    <img src="img/madrid_mug.jpg" alt="placeholder" />
+                </a>
+                <a href="typography.index.html">
+                    <img src="img/typography.jpg" alt="placeholder" />
+                </a>
+                <a href="flagdesign.index.html">
+                    <img src="img/flagdesign.jpg" alt="placeholder" />
+                </a>
+            </div>
+
         </section>
+
     </main>
 
-    <footer class="site-footer">
-        <nav class="site-navigation">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="index.html#work">Work</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </nav>
+    <footer class="site-footer fade-and-move-in">
+            <nav class="site-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        
+    </footer>
 
-</footer>
+</body>
+
+</html>
